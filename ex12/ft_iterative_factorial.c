@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/14 14:30:53 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 14:31:11 by rafcrist         ###   ########.fr       */
+/*   Created: 2026/05/14 13:53:53 by rafcrist          #+#    #+#             */
+/*   Updated: 2026/05/14 14:17:31 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+int	ft_iterative_factorial(int nb)
 {
-	if (b != 0)
+	int	result;
+
+	result = 1;
+	if (nb > 0)
 	{
-		*div = (a / b);
-		*mod = (a % b);
+		while (nb > 1)
+		{
+			result = result * nb;
+			nb--;
+		}
 	}
+	return (result);
 }

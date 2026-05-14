@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/14 14:30:53 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 14:31:11 by rafcrist         ###   ########.fr       */
+/*   Created: 2026/05/14 14:22:26 by rafcrist          #+#    #+#             */
+/*   Updated: 2026/05/14 14:46:17 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_putchar(char lt)
 {
-	if (b != 0)
+	write(1, &lt, 1);
+}
+
+void	ft_print_alphabet(void)
+{
+	char	ltt;
+
+	ltt = 'a';
+	while (ltt <= 'z')
 	{
-		*div = (a / b);
-		*mod = (a % b);
+		ft_putchar(ltt);
+		ltt++;
 	}
 }
