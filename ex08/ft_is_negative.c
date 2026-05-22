@@ -6,14 +6,11 @@
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 14:27:04 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 14:47:11 by rafcrist         ###   ########.fr       */
+/*   Updated: 2026/05/22 14:01:10 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char ltt)
-{
-	write(1, &ltt, 1);
-}
+void	ft_putchar(char ltt);
 
 void	ft_is_negative(int n)
 {

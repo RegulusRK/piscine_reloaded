@@ -6,23 +6,18 @@
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 18:28:28 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 18:56:31 by rafcrist         ###   ########.fr       */
+/*   Updated: 2026/05/22 14:21:18 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-void	ft_putchar(char ltt)
-{
-	write(1, &ltt, 1);
-}
+void	ft_putchar(char ltt);
 
 int	main(int argc, char **argv)
 {
 	int	i;
 	int	j;
-	
-	j = 1;
 
+	j = 1;
 	if (argc >= 2)
 	{
 		while (argv[j])

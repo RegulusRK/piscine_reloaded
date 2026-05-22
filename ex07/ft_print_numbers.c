@@ -6,16 +6,13 @@
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 14:24:44 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 14:46:44 by rafcrist         ###   ########.fr       */
+/*   Updated: 2026/05/22 14:53:21 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char ltt)
-{
-	write(1, &ltt, 1);
-}
+void	ft_putchar(char ltt);
 
-void	ft_print_number(void)
+void	ft_print_numbers(void)
 {
 	char	zero;
 

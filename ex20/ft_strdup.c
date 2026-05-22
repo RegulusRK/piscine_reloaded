@@ -1,34 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/19 15:56:57 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/22 14:36:09 by rafcrist         ###   ########.fr       */
+/*   Created: 2026/05/22 14:24:34 by rafcrist          #+#    #+#             */
+/*   Updated: 2026/05/22 14:34:27 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include<stdlib.h>
 
-int	*ft_range(int min, int max)
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	length;
-	int	*nmbrs;
 
-	if (min >= max)
-		return (NULL);
-	length = (max - min);
-	nmbrs = malloc(sizeof(int) * length);
-	if (nmbrs == NULL)
-		return (NULL);
 	i = 0;
-	while (i < length)
+	while (str[i])
+		i++;
+	return (i);
+}
+
+char	*ft_strdup(char *src)
+{
+	int		i;
+	int		length;
+	char	*src_copy;
+
+	i = 0;
+	length = ft_strlen(src);
+	src_copy = malloc(length + 1);
+	if (src_copy == NULL)
+		return (NULL);
+	while (src[i])
 	{
-		nmbrs[i] = min;
-		min += 1;
+		src_copy[i] = src[i];
 		i++;
 	}
-	return (nmbrs);
+	src_copy[i] = '\0';
+	return (src_copy);
 }

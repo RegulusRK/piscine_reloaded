@@ -6,7 +6,7 @@
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 18:18:23 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/19 18:00:56 by rafcrist         ###   ########.fr       */
+/*   Updated: 2026/05/22 14:19:53 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_strcmp(char *s1, char *s2)
 	i = 0;
 	while (s1[i] == s2[i] && s1[i])
 		i++;
-	return (s1[i] - s2[i]);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

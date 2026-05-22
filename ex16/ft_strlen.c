@@ -6,13 +6,14 @@
 /*   By: rafcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 17:37:57 by rafcrist          #+#    #+#             */
-/*   Updated: 2026/05/14 17:41:20 by rafcrist         ###   ########.fr       */
+/*   Updated: 2026/05/22 15:00:01 by rafcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_strlen(char *str)
 {
 	int	i;
 
+	i = 0;
 	while (str[i])
 		i++;
 	return (i);
